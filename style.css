@@ -230,6 +230,8 @@ hr {
     display: flex;
     flex-flow: column;
     height: 100%;
+    --margin: 0.5rem;
+    grid-gap: var(--margin);
   }
 
   h1 {
@@ -250,7 +252,16 @@ hr {
 
   section.series {
     order: 2;
-    padding-bottom: 0;
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+
+  .movie:last-of-type .director {
+    margin-left: 0.3rem;
+  }
+
+  .series ol {
+    padding-bottom: 1rem;
   }
 
   .stills img {
@@ -258,7 +269,4 @@ hr {
     max-width: 100%;
   }
 
-  .show-more {
-    padding-top: 2rem;
-  }
 }
