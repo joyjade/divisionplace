@@ -113,6 +113,7 @@ section.stills {
 
 .surprise hr {
   margin: 1rem 0;
+  color: white;
 }
 
 
@@ -229,9 +230,9 @@ hr {
   body {
     display: flex;
     flex-flow: column;
-    height: 100%;
     --margin: 0.5rem;
-    grid-gap: var(--margin);
+    height: 100%;
+    grid-gap: var(--margin); 
   }
 
   h1 {
