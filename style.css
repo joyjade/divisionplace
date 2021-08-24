@@ -42,17 +42,15 @@ body {
   grid-gap: 1rem;
 }
 
-/* STYLES */
+/* GLOBAL STYLES */
 
 h1 {
   font-family: "Junicode";
   font-weight: 400;
   color: var(--color);
   text-transform: uppercase;
-  margin: 0.15rem 0.3rem 0;
   font-size: 1.5rem;
 }
-
 h6, .director, p, .surprise, h3, a {
   font-weight: 400;
   font-size: 0.85rem;
@@ -67,6 +65,13 @@ b {
   font-weight: 500;
 }
 
+/* INDEX */
+.index {
+  padding: 1rem;
+}
+
+/* DIVISION */
+
 h6, .director, a:hover  {
   color: var(--shade);
 }
@@ -77,6 +82,10 @@ li, section > div {
 
 .symbol {
   margin: 1rem 0 !important;
+}
+
+.division h1 {
+  margin: 0.15rem 0.3rem 0;
 }
 
 
