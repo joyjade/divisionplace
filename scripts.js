@@ -4,7 +4,7 @@
   movie = document.getElementsByClassName('movie');
   
   series.addEventListener('mouseover', function(event) {
-    let movie = event.target.closest('li');
+    let movie = event.target.closest('.movie-still');
     if (!movie) return;
     let movieName = movie.dataset.id,
     still = document.querySelector(`[data-name = ${movieName}]`),
