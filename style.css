@@ -59,9 +59,17 @@ b {
   --border:  1px solid black
 }
 
-.index h1 {
+.index h1, .index h1 > * {
   font-size: 2rem;
   padding-bottom: 2rem;
+}
+
+.index a {
+  text-decoration: none;
+}
+
+.index a:hover {
+  text-decoration: underline;
 }
 
 .index ul:first-of-type {
@@ -85,13 +93,14 @@ b {
   font-family: var(--typeface);
 }
 
-.index a, .index p, .index h2  {
+.index ul a, .index ul p, .index h2, .index h2 > *  {
   font-size: 1.4rem;
 }
 
 .index li.header {
   text-transform: uppercase;
 }
+
 
 /* DIVISION */
 
@@ -291,7 +300,25 @@ hr {
 
 
 @media screen and (max-width: 500px) {
-  body {
+
+  .index {
+    padding-bottom: 2rem;
+  }
+  .index li {
+    flex-flow: column;
+  }
+
+  .index a {
+    text-decoration: underline;
+  }
+
+  .index ul a, .index ul p, .index h2, .index h2 > *  {  
+    line-height: 1.2; 
+  }
+
+
+
+  body.division {
     display: flex;
     flex-flow: column;
     --margin: 0.5rem;
